@@ -2,9 +2,11 @@
   "name": "C14-Tech-Blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "node server.js",
+    "seeds": "node seeds/index.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "dotenv": "^10.0.0",
     "express-handlebars": "^5.3.3",
     "express-session": "^1.17.2",
+    "jest": "^27.0.6",
     "mysql2": "^2.3.0",
     "sequelize": "^6.6.5"
   }
