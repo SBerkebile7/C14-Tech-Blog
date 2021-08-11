@@ -2,7 +2,11 @@
     <h2>Create New Post</h2>
 
     <form class="new-post-form">
-        <a href="/dashboard/create/"><button id="create-post" class="btn">Create a new post</button></a>
+        {{#if posts.length}}
+        <a href="/dashboard/create/"><button class="btn-no-style">Create a new post</button></a>
+        {{else}}
+        <a href="/dashboard/create/"><button class="btn-no-style">Create your first post</button></a>
+        {{/if}}
     </form>
 </section>
 
