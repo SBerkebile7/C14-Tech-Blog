@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tech Blog</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="/">The Tech Blog</a>
+            </h1>
+            <nav>
+                {{#if loggedIn}}
+                <a href="/">homepage</a>
+                <a href="/dashboard">dashboard</a>
+                <a href="/dashboard/create/">create post</a>
+                <button id="logout" class="btn-no-style">logout</button>
+                {{else}}
+                <a href="/">homepage</a>
+                <a href="/login">login</a>
+                {{/if}}
+            </nav>
+        </header>
+
+        <main>
+            {{{ body }}}
+        </main>
+
+        <footer>
+        {{#if loggedIn}}
+        <div class="text-centered">  
+            <a href="/">homepage</a>
+            <a href="/dashboard">dashboard</a>
+            <a href="/dashboard/create/">create post</a>
+            <button id="logout" class="btn-no-style">logout</button>
+            {{else}}
+            <a href="/">homepage</a>
+            <a href="/login">login</a>
+        </div>
+        {{/if}} 
+        </footer>
+    </div>
+    
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+</body>
+
+</html>

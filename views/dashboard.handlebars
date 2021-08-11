@@ -1,0 +1,23 @@
+<section>
+    <h2>Create New Post</h2>
+
+    <form class="new-post-form">
+        <a href="/dashboard/create/"><button id="create-post" class="btn">Create a new post</button></a>
+    </form>
+</section>
+
+<h2>Your Posts</h2>
+{{#if posts.length}}
+<section>
+    <ol>
+        {{#each posts as |post|}}
+        <li>
+            {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+        </li>
+        {{/each}}
+    </ol>
+    {{else}}
+    <h5>You do not have any posts, create one now!</h5>
+</section>
+{{/if}}
