@@ -13,9 +13,6 @@ A website that allows users to post blogs written by developers, leave comments 
 * MySQL
 * Handlebars
 
-## Video Walkthrough
-[Click here to be guided to the video on YouTube]()
-
 ## GitHub Repository
 https://github.com/SBerkebile7/C14-Tech-Blog
 
