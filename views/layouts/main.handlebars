@@ -14,17 +14,17 @@
     <div class="wrapper">
         <header>
             <h1>
-                <a href="/">The Tech Blog</a>
+                <a href="/"><button class="btn-no-style">The Tech Blog</button></a>
             </h1>
             <nav>
                 {{#if loggedIn}}
-                <a href="/">homepage</a>
-                <a href="/dashboard">dashboard</a>
-                <a href="/dashboard/create/">create post</a>
+                <a href="/"><button class="btn-no-style">homepage</button></a>
+                <a href="/dashboard"><button class="btn-no-style">dashboard</button></a>
+                <a href="/dashboard/create/"><button class="btn-no-style">create post</button></a>
                 <button id="logout" class="btn-no-style">logout</button>
                 {{else}}
-                <a href="/">homepage</a>
-                <a href="/login">login</a>
+                <a href="/"><button class="btn-no-style">homepage</button></a>
+                <a href="/login"><button class="btn-no-style">login</button></a>
                 {{/if}}
             </nav>
         </header>
@@ -36,9 +36,9 @@
         <footer>
         {{#if loggedIn}}
         <div class="text-centered">  
-            <a href="/">homepage</a>
-            <a href="/dashboard">dashboard</a>
-            <a href="/dashboard/create/">create post</a>
+            <a href="/"><button class="btn-no-style">homepage</button></a>
+            <a href="/dashboard"><button class="btn-no-style">dashboard</button></a>
+            <a href="/dashboard/create/"><button class="btn-no-style">create post</button></a>
             <button id="logout" class="btn-no-style">logout</button>
             {{else}}
             <a href="/">homepage</a>
